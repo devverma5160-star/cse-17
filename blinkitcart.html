@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blinkit – Instant Delivery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* Navbar */
+        header {
+            background: #fff;
+            padding: 12px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #0c831f;
+        }
+
+        .search-box input {
+            width: 350px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .login-btn {
+            background: #0c831f;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .hero {
+            background: #fff;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+            border-radius: 12px;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hero img {
+            width: 300px;
+        }
+
+        /* Categories */
+        .categories {
+            margin: 20px;
+        }
+
+        .categories h2 {
+            margin-bottom: 15px;
+        }
+
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+
+        .cat-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .cat-card img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+
+        .cat-card p {
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">blinkit</div>
+    <div class="search-box">
+        <input type="text" placeholder="Search for products...">
+    </div>
+    <button class="login-btn">Login</button>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Groceries delivered in minutes</h1>
+        <p>Fresh fruits, vegetables, snacks & more</p>
+    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="delivery">
+</section>
+
+<section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="cat-grid">
+        <div class="cat-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png">
+            <p>Fruits</p>
+        </div>
+        <div class="cat-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/135/135763.png">
+            <p>Vegetables</p>
+        </div>
+        <div class="cat-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+            <p>Snacks</p>
+        </div>
+        <div class="cat-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png">
+            <p>Dairy</p>
+        </div>
+        <div class="cat-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
+            <p>Beverages</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Blinkit Clone | Made for learning
+</footer>
+
+</body>
+</html>
