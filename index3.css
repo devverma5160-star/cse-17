@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0b0f1a;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: glow 2s infinite alternate;
+}
+
+.petal {
+    position: absolute;
+    width: 80px;
+    height: 120px;
+    background: radial-gradient(circle, #ffb6f0, #ff4dd2);
+    border-radius: 50%;
+    top: 40px;
+    left: 60px;
+}
+
+.p1 { transform: rotate(0deg) translateY(-40px); }
+.p2 { transform: rotate(60deg) translateY(-40px); }
+.p3 { transform: rotate(120deg) translateY(-40px); }
+.p4 { transform: rotate(180deg) translateY(-40px); }
+.p5 { transform: rotate(240deg) translateY(-40px); }
+.p6 { transform: rotate(300deg) translateY(-40px); }
+
+.center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #fff176, #fbc02d);
+    border-radius: 50%;
+    top: 75px;
+    left: 75px;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 10px #ff66d9);
+        transform: scale(1);
+    }
+    to {
+        filter: drop-shadow(0 0 25px #ff99e6);
+        transform: scale(1.05);
+    }
+}
