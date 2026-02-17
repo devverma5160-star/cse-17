@@ -2,61 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>E-Commerce Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>School Result Table</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f6f8;
+            padding:40px;
+        }
+
+        table{
+            width:80%;
+            margin:auto;
+            border-collapse:collapse;
+            background:#fff;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        caption{
+            caption-side: top;
+            font-size:22px;
+            font-weight:bold;
+            margin-bottom:15px;
+            color:#333;
+        }
+
+        th, td{
+            border:1px solid #444;
+            padding:10px;
+            text-align:center;
+        }
+
+        thead{
+            background:#2c3e50;
+            color:#fff;
+        }
+
+        tbody tr:nth-child(even){
+            background:#f2f2f2;
+        }
+
+        .total{
+            font-weight:bold;
+            background:#e8f0fe;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>ShopEasy</h1>
-        <input type="text" placeholder="Search products">
-    </header>
+<table>
+    <caption>Class 10 – Annual Examination Result</caption>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Products</a>
-        <a href="#">Cart</a>
-        <a href="#">Contact</a>
-    </nav>
+    <thead>
+        <tr>
+            <th rowspan="2">Roll No</th>
+            <th rowspan="2">Student Name</th>
+            <th colspan="3">Subjects</th>
+            <th rowspan="2">Total Marks</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+    </thead>
 
-    <section class="banner">
-        <h2>Best Deals Everyday</h2>
-        <p>Shop smart, shop easy</p>
-    </section>
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Rahul Sharma</td>
+            <td>85</td>
+            <td>78</td>
+            <td>88</td>
+            <td class="total">251</td>
+        </tr>
 
-    <section class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/180" alt="">
-            <h3>Smartphone</h3>
-            <p>₹12,999</p>
-            <button>Add to Cart</button>
-        </div>
+        <tr>
+            <td>102</td>
+            <td>Anjali Verma</td>
+            <td>92</td>
+            <td>89</td>
+            <td>90</td>
+            <td class="total">271</td>
+        </tr>
 
-        <div class="product">
-            <img src="https://via.placeholder.com/180" alt="">
-            <h3>Headphones</h3>
-            <p>₹1,999</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/180" alt="">
-            <h3>Smart Watch</h3>
-            <p>₹3,499</p>
-            <button>Add to Cart</button>
-        </div>
-
-        <div class="product">
-            <img src="https://via.placeholder.com/180" alt="">
-            <h3>Laptop</h3>
-            <p>₹45,000</p>
-            <button>Add to Cart</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 ShopEasy</p>
-    </footer>
+        <tr>
+            <td>103</td>
+            <td>Rohit Singh</td>
+            <td>76</td>
+            <td>80</td>
+            <td>74</td>
+            <td class="total">230</td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
 </html>
